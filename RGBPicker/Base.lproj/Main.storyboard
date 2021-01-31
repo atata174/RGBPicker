@@ -44,11 +44,11 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Hte-bi-xrH">
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.20000000000000001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Hte-bi-xrH">
                                                 <rect key="frame" x="115.5" y="0.0" width="174.5" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                                 <connections>
-                                                    <action selector="redColorSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="NWn-kf-78K"/>
+                                                    <action selector="redColorSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="ErS-KE-Q4t"/>
                                                 </connections>
                                             </slider>
                                         </subviews>
@@ -74,11 +74,11 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="NmW-IH-UuT">
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.29999999999999999" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="NmW-IH-UuT">
                                                 <rect key="frame" x="115.5" y="0.0" width="174.5" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                                 <connections>
-                                                    <action selector="greenColorSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="Mh1-UV-zau"/>
+                                                    <action selector="greenColorSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="BNx-vN-jj4"/>
                                                 </connections>
                                             </slider>
                                         </subviews>
@@ -108,7 +108,7 @@
                                                 <rect key="frame" x="115.5" y="0.0" width="174.5" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                                 <connections>
-                                                    <action selector="blueColorSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="RMR-Ab-4Gr"/>
+                                                    <action selector="blueColorSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="xaI-yx-e8N"/>
                                                 </connections>
                                             </slider>
                                         </subviews>
@@ -137,8 +137,11 @@
                     <connections>
                         <outlet property="RGBView" destination="nJh-o4-wiG" id="hIN-ea-WZN"/>
                         <outlet property="blueColorCount" destination="59a-SO-ibX" id="1uZ-RD-XXp"/>
+                        <outlet property="blueSlider" destination="qEv-wO-CcU" id="AV3-Ld-VOh"/>
                         <outlet property="greenColorCount" destination="nTO-J6-PC9" id="iu8-pI-uO2"/>
+                        <outlet property="greenSlider" destination="NmW-IH-UuT" id="8vS-je-WP3"/>
                         <outlet property="redColorCount" destination="YkA-PO-k4x" id="Pab-sa-Syf"/>
+                        <outlet property="redSlider" destination="Hte-bi-xrH" id="jyC-L6-d9X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
