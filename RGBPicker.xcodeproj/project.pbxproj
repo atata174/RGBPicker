@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6767923C25D719DD00F46DE1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6767923B25D719DD00F46DE1 /* MainViewController.swift */; };
 		6798903025C6017F001CC84B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6798902F25C6017F001CC84B /* AppDelegate.swift */; };
 		6798903225C6017F001CC84B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6798903125C6017F001CC84B /* SceneDelegate.swift */; };
-		6798903425C6017F001CC84B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6798903325C6017F001CC84B /* ViewController.swift */; };
+		6798903425C6017F001CC84B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6798903325C6017F001CC84B /* SecondViewController.swift */; };
 		6798903725C6017F001CC84B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6798903525C6017F001CC84B /* Main.storyboard */; };
 		6798903925C60182001CC84B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6798903825C60182001CC84B /* Assets.xcassets */; };
 		6798903C25C60182001CC84B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6798903A25C60182001CC84B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6767923B25D719DD00F46DE1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		6798902C25C6017F001CC84B /* RGBPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGBPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6798902F25C6017F001CC84B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6798903125C6017F001CC84B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6798903325C6017F001CC84B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6798903325C6017F001CC84B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		6798903625C6017F001CC84B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6798903825C60182001CC84B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6798903B25C60182001CC84B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +39,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6767923325D703C900F46DE1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6798903525C6017F001CC84B /* Main.storyboard */,
+				6798903A25C60182001CC84B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		6767923425D703D600F46DE1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6798903825C60182001CC84B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6767923525D703E700F46DE1 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				6798902F25C6017F001CC84B /* AppDelegate.swift */,
+				6798903125C6017F001CC84B /* SceneDelegate.swift */,
+				6798903D25C60182001CC84B /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		6767923825D7042100F46DE1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6767923925D7042E00F46DE1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6798903325C6017F001CC84B /* SecondViewController.swift */,
+				6767923B25D719DD00F46DE1 /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		6798902325C6017F001CC84B = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +101,11 @@
 		6798902E25C6017F001CC84B /* RGBPicker */ = {
 			isa = PBXGroup;
 			children = (
-				6798902F25C6017F001CC84B /* AppDelegate.swift */,
-				6798903125C6017F001CC84B /* SceneDelegate.swift */,
-				6798903325C6017F001CC84B /* ViewController.swift */,
-				6798903525C6017F001CC84B /* Main.storyboard */,
-				6798903825C60182001CC84B /* Assets.xcassets */,
-				6798903A25C60182001CC84B /* LaunchScreen.storyboard */,
-				6798903D25C60182001CC84B /* Info.plist */,
+				6767923925D7042E00F46DE1 /* ViewControllers */,
+				6767923825D7042100F46DE1 /* Models */,
+				6767923525D703E700F46DE1 /* SupportingFiles */,
+				6767923325D703C900F46DE1 /* Storyboards */,
+				6767923425D703D600F46DE1 /* Resources */,
 			);
 			path = RGBPicker;
 			sourceTree = "<group>";
@@ -137,9 +180,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6798903425C6017F001CC84B /* ViewController.swift in Sources */,
+				6798903425C6017F001CC84B /* SecondViewController.swift in Sources */,
 				6798903025C6017F001CC84B /* AppDelegate.swift in Sources */,
 				6798903225C6017F001CC84B /* SceneDelegate.swift in Sources */,
+				6767923C25D719DD00F46DE1 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +332,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D8C7N2PLY3;
-				INFOPLIST_FILE = RGBPicker/Info.plist;
+				INFOPLIST_FILE = RGBPicker/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +351,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D8C7N2PLY3;
-				INFOPLIST_FILE = RGBPicker/Info.plist;
+				INFOPLIST_FILE = RGBPicker/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
