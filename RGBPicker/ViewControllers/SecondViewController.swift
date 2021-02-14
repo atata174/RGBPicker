@@ -19,6 +19,10 @@ class SecondViewController: UIViewController {
     @IBOutlet var greenSlider: UISlider!
     @IBOutlet var blueSlider: UISlider!
     
+    @IBOutlet var redTextField: UITextField!
+    @IBOutlet var greenTextField: UITextField!
+    @IBOutlet var blueTextField: UITextField!
+    
     var rgbObject: UIColor!
     var rgbValues: CIColor!
     var delegate: SettingsViewControllerDelegate!
@@ -39,11 +43,23 @@ class SecondViewController: UIViewController {
         sliderLogic()
         
         switch sender.tag {
-        case 0: redColorCount.text = sliderLabelAction(slider: sender)
-        case 1: greenColorCount.text = sliderLabelAction(slider: sender)
-        case 2: blueColorCount.text = sliderLabelAction(slider: sender)
+        case 0:
+            redColorCount.text = sliderLabelAction(slider: sender)
+            redTextField.text = sliderLabelAction(slider: sender)
+        case 1:
+            greenColorCount.text = sliderLabelAction(slider: sender)
+            greenTextField.text = sliderLabelAction(slider: sender)
+        case 2:
+            blueColorCount.text = sliderLabelAction(slider: sender)
+            blueTextField.text = sliderLabelAction(slider: sender)
         default: break
         }
+    }
+    
+    private func keyboardSetup () {
+        redTextField.keyboardType = .decimalPad
+        greenTextField.keyboardType = .decimalPad
+        blueTextField.keyboardType = .decimalPad
     }
     
     private func sliderLogic () {
@@ -55,13 +71,12 @@ class SecondViewController: UIViewController {
             alpha: 1)
     }
     
-
-    
     private func sliderLabelAction(slider: UISlider) -> String {
         String(format: "%.2f", slider.value)
     }
     
     private func checkNilValues() {
+        keyboardSetup()
         
         if rgbValues != nil && rgbValues != nil  {
             redSlider.value = Float(rgbValues.red)
@@ -78,5 +93,12 @@ class SecondViewController: UIViewController {
         rgbObject = RGBView.backgroundColor
         delegate.setNewValues(newColor: rgbObject)
         dismiss(animated: true)
+    }
+}
+
+extension SecondViewController: UITextFieldDelegate {
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
 }
